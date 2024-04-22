@@ -1,4 +1,4 @@
-import PizzaModel from '../models/Pizza';
+import PizzaModel from '../models/Pizza.js';
 
 export const create = async (request, response) => {
     const {...pizza} = request.body;

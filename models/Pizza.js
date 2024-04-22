@@ -1,7 +1,7 @@
 import mongoose from "mongoose";
 
 const PizzaSchema = new mongoose.Schema({
-    title: {
+    name: {
         type: String,
         required: true
     },
@@ -26,7 +26,7 @@ const PizzaSchema = new mongoose.Schema({
         required: true
     },
 
-    image: {
+    img: {
         type: String,
         required: true
     },
