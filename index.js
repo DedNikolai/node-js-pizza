@@ -19,6 +19,7 @@ app.get('/', (__, response) => {
     response.status(200).send('Hello Pizza App');
 });
 app.post('/pizzas', pizzaCreateValidation, handleValidationErrors, PizzaController.create);
+app.get('/pizzas', PizzaController.getPizzas)
 
 app.listen(process.env.PORT, (error) => {
     if (error) {
